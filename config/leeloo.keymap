@@ -20,8 +20,8 @@ nice_view_spi: &spi0 { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
     combos {
         compatible = "zmk,combos";
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
+        hyper_tab {
+            bindings = <&kp LS(LA(LC(LG(TAB))))>;
             key-positions = <53 54>;
         };
 

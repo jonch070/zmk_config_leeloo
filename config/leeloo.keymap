@@ -170,13 +170,18 @@ nice_view_spi: &spi0 { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
         };
 
         Number {
+            display-name = "NUMBER";
             bindings = <
 &trans  &trans  &trans        &trans        &trans        &trans                  &trans  &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &kp NUMBER_7  &kp N8        &kp N9        &trans                  &trans  &trans  &kp LEFT_SHIFT  &trans  &trans  &trans
 &trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans                  &trans  &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
-                              &kp N0        &kp PERIOD    &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp PERIOD    &kp N0        &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(LA(LS(LEFT))) LA(LC(LS(RIGHT)))>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
     };
 

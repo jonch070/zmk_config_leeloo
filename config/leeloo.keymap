@@ -107,11 +107,11 @@ nice_view_spi: &spi0 { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
         default_layer {
             display-name = " OSX";
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3              &kp NUMBER_4      &kp N5                                          &kp NUMBER_6  &kp N7                    &kp N8                    &kp N9      &kp N0     &kp C_SLEEP
-&kp TAB    &kp Q         &kp W         &kp E                     &kp R             &kp T                                           &kp Y         &kp U                     &kp I                     &kp O       &kp P      &kp DELETE
-&sk LALT   &kp A         &kp S         &kp D                     &kp F             &kp G                                           &kp H         &kp J                     &kp K                     &kp L       &kp SQT    &sk RIGHT_ALT
-&sk LSHFT  &kp Z         &kp X         &kp C                     &kp V             &kp B                &lt 1 SPACE  &lt 4 ENTER   &kp N         &kp M                     &kp COMMA                 &kp PERIOD  &kp SLASH  &sl 3
-                                       &kp LS(LA(LC(LEFT_GUI)))  &sk LEFT_CONTROL  &mt LEFT_GUI RETURN  &lt 1 TAB    &lt 2 ESCAPE  &kp SPACE     &mt LEFT_SHIFT BACKSPACE  &kp LS(LA(LEFT_CONTROL))
+&kp GRAVE  &lt 26 N1  &lt 27 N2  &lt 28 N3                 &lt 29 N4         &lt 30 N5                                       &kp NUMBER_6  &kp N7                    &kp N8                    &kp N9      &kp N0     &kp C_SLEEP
+&kp TAB    &lt 11 Q   &lt 12 W   &lt 13 E                  &lt 14 R          &lt 15 T                                        &kp Y         &kp U                     &kp I                     &kp O       &kp P      &kp DELETE
+&sk LALT   &lt 16 A   &lt 17 S   &lt 18 D                  &lt 19 F          &lt 20 G                                        &kp H         &kp J                     &kp K                     &kp L       &kp SQT    &sk RIGHT_ALT
+&sk LSHFT  &lt 20 Z   &lt 21 X   &lt 22 C                  &lt 23 V          &lt 24 B             &lt 1 SPACE  &lt 4 ENTER   &kp N         &kp M                     &kp COMMA                 &kp PERIOD  &kp SLASH  &sl 3
+                                 &kp LS(LA(LC(LEFT_GUI)))  &sk LEFT_CONTROL  &mt LEFT_GUI RETURN  &lt 1 TAB    &lt 2 ESCAPE  &kp SPACE     &mt LEFT_SHIFT BACKSPACE  &kp LS(LA(LEFT_CONTROL))
             >;
 
             sensor-bindings =
@@ -177,6 +177,350 @@ nice_view_spi: &spi0 { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
             sensor-bindings =
                 <&inc_dec_kp LC(LA(LS(LG(LEFT)))) LA(LC(LS(LG(RIGHT))))>,
                 <&inc_dec_kp LS(LA(LC(UP_ARROW))) LS(LC(LA(DOWN)))>;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
+        };
+
+        q {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(Q)) LC(LA(Q))>,
+                <&inc_dec_kp LC(LS(P)) LC(LA(P))>;
+        };
+
+        w {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(W)) LC(LA(W))>,
+                <&inc_dec_kp LC(LS(O)) LC(LA(O))>;
+        };
+
+        e {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(E)) LC(LA(E))>,
+                <&inc_dec_kp LC(LS(I)) LC(LA(I))>;
+        };
+
+        r {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(R)) LC(LA(R))>,
+                <&inc_dec_kp LC(LS(U)) LC(LA(U))>;
+        };
+
+        t {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(T)) LC(LA(T))>,
+                <&inc_dec_kp LC(LS(Y)) LC(LA(Y))>;
+        };
+
+        a {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(A)) LC(LA(A))>,
+                <&inc_dec_kp LC(LS(SQT)) LC(LA(SQT))>;
+        };
+
+        s {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(S)) LC(LA(S))>,
+                <&inc_dec_kp LC(LS(L)) LC(LA(L))>;
+        };
+
+        d {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(D)) LC(LA(S))>,
+                <&inc_dec_kp LC(LS(K)) LC(LA(K))>;
+        };
+
+        f {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(F)) LC(LA(F))>,
+                <&inc_dec_kp LC(LS(J)) LC(LA(J))>;
+        };
+
+        g {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(G)) LC(LA(G))>,
+                <&inc_dec_kp LC(LS(H)) LC(LA(H))>;
+        };
+
+        z {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LS(LC(Z)) LC(LA(Z))>,
+                <&inc_dec_kp LC(LS(SLASH)) LC(LA(SLASH))>;
+        };
+
+        x {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(LS(X)) LC(LA(X))>,
+                <&inc_dec_kp LC(LS(PERIOD)) LC(LA(PERIOD))>;
+        };
+
+        c {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(LS(C)) LC(LA(C))>,
+                <&inc_dec_kp LC(LS(COMMA)) LC(LA(COMMA))>;
+        };
+
+        v {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(LS(V)) LC(LA(V))>,
+                <&inc_dec_kp LC(LS(M)) LC(LA(M))>;
+        };
+
+        b {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(LS(B)) LC(LA(B))>,
+                <&inc_dec_kp LC(LS(N)) LC(LA(N))>;
+        };
+
+        n1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(LS(NUMBER_1)) LC(LA(NUMBER_1))>,
+                <&inc_dec_kp LC(LS(N0)) LC(LA(N0))>;
+        };
+
+        n2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(LS(NUMBER_2)) LC(LA(NUMBER_2))>,
+                <&inc_dec_kp LC(LS(N9)) LC(LA(N9))>;
+        };
+
+        n3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(LS(NUMBER_3)) LC(LA(NUMBER_3))>,
+                <&inc_dec_kp LC(LS(N8)) LC(LA(N8))>;
+        };
+
+        n4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(LS(NUMBER_4)) LC(LA(NUMBER_4))>,
+                <&inc_dec_kp LC(LS(N7)) LC(LA(N0))>;
+        };
+
+        n5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(LS(N5)) LC(LA(N5))>,
+                <&inc_dec_kp LC(LS(NUMBER_6)) LC(LA(NUMBER_6))>;
         };
     };
 

@@ -506,7 +506,7 @@ nice_view_spi: &spi0 { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
 
             sensor-bindings =
                 <&inc_dec_kp LC(LS(NUMBER_4)) LC(LA(NUMBER_4))>,
-                <&inc_dec_kp LC(LS(N7)) LC(LA(N0))>;
+                <&inc_dec_kp LC(LS(N7)) LC(LA(N7))>;
         };
 
         n5 {

@@ -109,7 +109,7 @@ nice_view_spi: &spi0 { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
             bindings = <
 &kp GRAVE  &lt 26 N1  &lt 27 N2  &lt 28 N3                 &lt 29 N4               &lt 30 N5                                       &kp NUMBER_6  &kp N7                    &kp N8                    &kp N9      &kp N0     &kp C_SLEEP
 &kp TAB    &lt 11 Q   &lt 12 W   &lt 13 E                  &lt 14 R                &lt 15 T                                        &kp Y         &kp U                     &kp I                     &kp O       &kp P      &kp DELETE
-&sk LALT   &lt 16 A   &lt 17 S   &lt 18 D                  &lt 19 F                &lt 20 G                                        &kp H         &kp J                     &kp K                     &kp L       &kp SQT    &kp RIGHT_ALT
+&sk LALT   &lt 16 A   &lt 17 S   &lt 18 D                  &lt 19 F                &lt 20 G                                        &kp H         &kp J                     &kp K                     &kp L       &kp SQT    &kp SEMICOLON
 &sk LSHFT  &lt 21 Z   &lt 22 X   &lt 23 C                  &lt 24 V                &lt 25 B             &lt 1 SPACE  &lt 4 ENTER   &kp N         &kp M                     &kp COMMA                 &kp PERIOD  &kp SLASH  &sl 3
                                  &kp LS(LA(LC(LEFT_GUI)))  &mt LEFT_CONTROL SPACE  &mt LEFT_GUI RETURN  &lt 1 TAB    &lt 2 ESCAPE  &kp SPACE     &mt LEFT_SHIFT BACKSPACE  &kp LS(LA(LEFT_CONTROL))
             >;

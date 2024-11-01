@@ -107,10 +107,10 @@ nice_view_spi: &spi0 { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
         default_layer {
             display-name = " OSX";
             bindings = <
-&kp GRAVE  &lt 26 N1  &lt 27 N2  &lt 28 N3                 &lt 29 N4               &lt 30 N5                                      &kp NUMBER_6  &kp N7                    &kp N8                    &kp N9      &kp N0     &tog 31
-&kp TAB    &lt 11 Q   &lt 12 W   &lt 13 E                  &lt 14 R                &lt 15 T                                       &kp Y         &kp U                     &kp I                     &kp O       &kp P      &caps_word
-&sk LALT   &lt 16 A   &lt 17 S   &lt 18 D                  &lt 19 F                &lt 20 G                                       &kp H         &kp J                     &kp K                     &kp L       &kp SQT    &kp SEMICOLON
-&sk LSHFT  &lt 21 Z   &lt 22 X   &lt 23 C                  &lt 24 V                &lt 25 B             &lt 1 SPACE  &lt 4 ENTER  &kp N         &kp M                     &kp COMMA                 &kp PERIOD  &kp SLASH  &sl 3
+&kp GRAVE  &lt 20 N1  &lt 21 N2  &lt 22 N3                 &lt 23 N4               &lt 24 N5                                      &kp NUMBER_6  &kp N7                    &kp N8                    &kp N9      &kp N0     &tog 25
+&kp TAB    &lt 5 Q    &lt 6 W    &lt 7 E                   &lt 8 R                 &lt 9 T                                        &kp Y         &kp U                     &kp I                     &kp O       &kp P      &caps_word
+&sk LALT   &lt 10 A   &lt 11 S   &lt 12 D                  &lt 13 F                &lt 14 G                                       &kp H         &kp J                     &kp K                     &kp L       &kp SQT    &kp SEMICOLON
+&sk LSHFT  &lt 15 Z   &lt 16 X   &lt 17 C                  &lt 18 V                &lt 19 B             &lt 1 SPACE  &lt 4 ENTER  &kp N         &kp M                     &kp COMMA                 &kp PERIOD  &kp SLASH  &sl 3
                                  &kp LS(LA(LC(LEFT_GUI)))  &mt LEFT_CONTROL SPACE  &mt LEFT_GUI RETURN  &lt 1 TAB    &lt 2 ESC    &kp SPACE     &mt LEFT_SHIFT BACKSPACE  &kp LS(LA(LEFT_CONTROL))
             >;
 
@@ -177,70 +177,6 @@ nice_view_spi: &spi0 { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
             sensor-bindings =
                 <&inc_dec_kp LC(LA(LS(LG(LEFT)))) LA(LC(LS(LG(RIGHT))))>,
                 <&inc_dec_kp LS(LA(LC(UP_ARROW))) LS(LC(LA(DOWN)))>;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         q {
